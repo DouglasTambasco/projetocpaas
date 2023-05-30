@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cadastre-se</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+      <h1>Faça seu cadastro!</h1>
+      
+  
+  <div class="label-float">
+    <input type="text" id="nome" placeholder=" " maxlength="60" required>
+    <label id="labelNome" for="nome"> Nome</label>
+  </div>
+
+  <div class="sexo">
+  <label id="labelSexo" for="sexo"> Sexo</label><br>
+    <input type="radio" name="sexo" value="masculino" id="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" name="sexo" value="feminino" id="feminino">
+    <label for="feminino">Feminino</label>
+  </div>
+
+    <div class="label-float">
+      <input type="date" name="data">
+      <label id="labelData" for="data">Data de Nascimento</label>
+    </div>
+    <!--<div class="label-float">
+    <input type="text" id="data" placeholder=" " required>
+    <label id="labelData" for="data">Data de Nascimento</label>
+  </div></!-->
+
+  <div class="label-float">
+    <input type="text" id="cpf" placeholder=" " maxlength="11"  required>
+    <label id="labelCpf" for="cpf"> CPF</label>
+  </div>
+
+  <div class="label-float">
+    <input type="tel" id="telefone" placeholder=" " maxlength="16" required>
+    <label id="labelTelefone" for="telefone"> Telefone Fixo</label>
+  </div>
+
+  <div class="label-float">
+    <input type="tel" id="celular" placeholder=" " maxlength="17" required>
+    <label id="labelCelular" for="celular"> Telefone Celular</label>
+  </div>
+
+  <div class="label-float">
+    <input type="text" id="nomemat" placeholder=" " maxlength="60" required>
+    <label id="labelNomemat" for="nomemat"> Nome Materno</label>
+  </div>
+
+  <div class="label-float">
+    <input type="text" id="endereco" placeholder=" " maxlength="60" required>
+    <label id="labelEndereco" for="endereco">Endereço Completo</label>
+  </div>
+  
+  <div class="label-float">
+    <input type="text" id="usuario" placeholder=" " required>
+    <label id="labelUsuario" for="usuario"> Login</label>
+  </div>
+  
+  <div class="label-float">
+    <input type="password" id="senha" placeholder=" " required>
+    <label id="labelSenha" for="usuario"> Senha</label>
+    <i id="versenha" class="bi bi-eye" aria-hidden="true"></i>
+  </div>
+      
+  <div class="label-float">
+    <input type="password" id="confirmsenha" placeholder=" " required>
+    <label id="labelConfirmSenha" for="confirmsenha"> Confirmar Senha</label>
+    <i id="vercsenha" class="bi bi-eye" aria-hidden="true"></i>
+  </div> 
+  
+  <div id='msgErro' ></div>
+  <div id='msgSucesso' ></div>
+  
+  <div class="justify-center">
+    <button onclick="cadastrar()">Cadastrar novo usuário</button>
+  </div>
+
+  <div>
+  <br>
+  </div>
+
+  <p>Já possui conta?
+  <a href="login.html"> Entre com seu login</a></p>
+
+    <button onclick="darkMode()">Contraste</button>
+
+  <script src="index.js"> </script>
+</div>
+</body>
+</html>

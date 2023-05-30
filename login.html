@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="login.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="container"> <!--CONTAINER são aqueles que possuem a capacidade de agrupar 
+    outros elementos e desta forma, transmitir as suas características de formatação. DIV é um container genérico para conteúdo de fluxo, que de certa forma não representa 
+      nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles 
+      compartilham valores de atributos, como lang.-->
+    <div class="card">
+      <h1>Entrar</h1>
+
+      <div id='msgErro' ></div> 
+  
+  <div class="label-float">
+    <input type="text" id="usuario" placeholder=" " required>
+    <label id="usuarioLabel" for="usuario"> Usuário</label>
+  </div>
+  
+  <div class="label-float">
+    <input type="password" id="senha" placeholder=" " required>
+    <label id="senhaLabel" for="senha"> Senha</label>
+    <i class="bi bi-eye" aria-hidden="true"></i>
+  </div>
+  
+  <div class="justify-center">
+    <button onclick="entrar()">Enviar</button>
+  </div>
+
+  <div class="justify-center">
+    <hr>
+  </div>
+
+  <p>Não tem conta?
+   <a href="index.html"> Cadastrar Novo Usuário</a></p>
+  
+    <script src="login.js"> </script>
+</body>
+</html>
